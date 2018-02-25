@@ -1,0 +1,23 @@
+uriygulak\BlogBundle\Entity\Post:
+    type: entity
+    table: null
+    repositoryClass: uriygulak\BlogBundle\Repository\PostRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: '500'
+        description:
+            type: text
+        content:
+            type: text
+        createdAt:
+            type: datetime
+        updateAt:
+            type: datetime
+    lifecycleCallbacks: {  }

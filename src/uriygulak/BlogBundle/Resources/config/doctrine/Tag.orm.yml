@@ -1,0 +1,18 @@
+uriygulak\BlogBundle\Entity\Tag:
+    type: entity
+    table: null
+    repositoryClass: uriygulak\BlogBundle\Repository\TagRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: text
+        createdAt:
+            type: datetime
+        updateAt:
+            type: datetime
+    lifecycleCallbacks: {  }

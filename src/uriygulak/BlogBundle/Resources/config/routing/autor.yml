@@ -1,0 +1,24 @@
+autor_index:
+    path:     /
+    defaults: { _controller: "uriygulakBlogBundle:autor:index" }
+    methods:  GET
+
+autor_show:
+    path:     /{id}/show
+    defaults: { _controller: "uriygulakBlogBundle:autor:show" }
+    methods:  GET
+
+autor_new:
+    path:     /new
+    defaults: { _controller: "uriygulakBlogBundle:autor:new" }
+    methods:  [GET, POST]
+
+autor_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "uriygulakBlogBundle:autor:edit" }
+    methods:  [GET, POST]
+
+autor_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "uriygulakBlogBundle:autor:delete" }
+    methods:  DELETE

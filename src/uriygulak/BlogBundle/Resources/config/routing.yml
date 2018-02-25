@@ -1,0 +1,34 @@
+uriygulak_blog_homepage:
+    path:     /
+    defaults: { _controller: uriygulakBlogBundle:Default:index }
+    requirements:
+             methods:  GET
+
+uriygulak_blog_about:
+    path:   /about
+    defaults: { _controller: uriygulakBlogBundle:Default:about }
+    requirements:
+         methods:  GET
+
+uriygulak_blog_tag:
+    path:   /tag
+    defaults: { _controller: uriygulakBlogBundle:Tag:index }
+
+
+
+uriygulak_blog_post:
+    path:    /post
+    defaults: { _controller: uriygulakBlogBundle:Post:index }
+
+
+
+uriygulak_blog_autor:
+    path:    /autor
+    defaults: { _controller: uriygulakBlogBundle:autor:index }
+
+
+uriygulak_blog_contact:
+    path:  /contact
+    defaults: { _controller: uriygulakBlogBundle:Default:contact }
+    requirements:
+        methods:  GET|POST

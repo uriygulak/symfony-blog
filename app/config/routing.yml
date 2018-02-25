@@ -1,0 +1,27 @@
+uriygulak_blog:
+    resource: "@uriygulakBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+uriygulak_blog_tag:
+    resource: "@uriygulakBlogBundle/Resources/config/routing/tag.yml"
+    prefix:   /tag
+
+
+uriygulak_blog_post:
+    resource: "@uriygulakBlogBundle/Resources/config/routing/post.yml"
+    prefix:   /post
+
+
+uriygulak_blog_autor:
+        resource: "@uriygulakBlogBundle/Resources/config/routing/autor.yml"
+        prefix:   /autor
+
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
